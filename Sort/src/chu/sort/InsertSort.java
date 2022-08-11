@@ -21,6 +21,10 @@ public class InsertSort {
     public static void main(String[] args) {
         int[] arr = {48,62,35,77,55,14,35,98};
         sort(arr);
+        for (int i = 0 ; i < arr.length ; i++){
+            System.out.println(arr[i]);
+        }
+        System.out.println("\n");
     }
     public static void sort(int @NotNull [] arr){
         if(arr.length >= LENGTH){
@@ -36,10 +40,7 @@ public class InsertSort {
                 arr[j+1] = x ;
             }
         }
-        for (int i = 0 ; i < arr.length ; i++){
-            System.out.println(arr[i]);
-        }
-        System.out.println("\n");
+
 
     }
 
